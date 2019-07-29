@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Map,Reduce Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body> 
+      
+      <div id="demo"></div>
+
+<!-- First question -->
+<!-- 
+<script>
+        var target='ood';
+        var target=[...target];
+        var abs="";
+        var res=target.map(myFunc);
+        document.getElementById("demo").innerHTML=abs;
+        function myFunc(charbychar){
+            var up=charbychar.toUpperCase();
+            abs=abs+up;
+            return abs;
+        }
+</script> -->
+
+<!-- fifth question -->
+<!-- <script>  
+        var target='ood';
+        var target=[...target];
+        var numbers = "doodgdff";
+        var n=[...numbers];
+        var initialValue="d";
+        var a=[];
+        var i=0;
+        var length=n.length;
+        console.log("length",length);
+        document.getElementById("demo").innerHTML = n.reduce(myFunc,initialValue);
+        function myFunc(buffervalue,currentvalue,currentindex){
+                 if(i<target.length){
+                              if(currentvalue==target[i]){
+                                i=i+1;
+                              }
+                              else{
+                                    var prein=currentindex-1;
+                                    if(n[prein]!=currentvalue || i != 1){
+                                        i=0;
+                                    }
+                              }
+                    }  
+                    if(i==target.length){
+                        return true;
+                    }
+                    else{
+                        return false;
+                    }
+        }
+</script> -->
+
+<!-- secound question -->
+<!-- <script>
+var str="charmi shah hemant kumar"
+var str2=[];
+var f=str.split(" ");
+var ab="";
+var i=0,len=0;
+var resultof2=f.map(myFunc);
+var lenf=resultof2.length-1;
+var fres=resultof2[lenf];
+document.getElementById("demo").innerHTML=fres;
+function myFunc(oneword){
+  if(len<f.length){
+      if(i==0){
+              console.log("oneword",oneword);
+              var res=oneword.toUpperCase();
+              console.log("res",res);
+              ab=ab+" "+res;
+              console.log("ab",ab);
+              i=1;
+      }
+      else{
+              console.log("res",res);
+              ab=ab+" "+oneword;
+              console.log("ab",ab);
+              i=0;
+        }
+        len=len+1;
+        return ab;
+  }
+}
+</script> -->
+
+  
+<!-- sixth(last)question -->
+<!-- <script> 
+var target="361581732726247521644353 4161492813593986955 4161492813593986955 361581732726247521644353";
+var target=target.split(" ");
+var ab="";
+target.map(myFunc);
+function myFunc(myword){
+  var ca=[...myword];
+  var total=ca.reduce(function(sum, word){
+          var wordn=parseInt(word);
+          return sum + wordn;
+        }, 0);
+        var d=String.fromCharCode(total);
+        ab=ab+d;
+        return ab;
+}
+document.getElementById("demo").innerHTML=ab;
+</script>-->
+</body>  
+</html>
